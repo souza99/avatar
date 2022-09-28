@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_avatar/components/botao_sms.dart';
 import 'package:projeto_avatar/components/cartao_nome.dart';
 
 import 'components/cartao_telefone.dart';

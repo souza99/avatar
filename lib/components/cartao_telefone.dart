@@ -12,8 +12,8 @@ class CartaoTelefone extends StatelessWidget {
         title: const Text('Contato:'),
         subtitle: const Text('(44) 9 8200-8800'),
         trailing: PainelTelefone(
-          funcaoTelefone: chamarTelefone(),
-          funcaoSms: chamarSms(),
+          funcaoTelefone: chamarTelefone,
+          funcaoSms: chamarSms,
         ),
       ),
     );
