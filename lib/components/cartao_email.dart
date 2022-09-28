@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_avatar/components/painel_email.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CartaoEmail extends StatelessWidget {
   const CartaoEmail({Key? key}) : super(key: key);
@@ -9,7 +11,14 @@ class CartaoEmail extends StatelessWidget {
       child: ListTile(
         title: const Text('Email: '),
         subtitle: const Text('jpfsouza99@gmail.com'),
+        trailing: PainelEmail(
+          funcaoEmail: mandarEmail,
+        ),
       ),
     );
+  }
+
+  mandarEmail() {
+    launchUrl(Uri(scheme: 'mailto', path: 'nome@gmail.com'));
   }
 }

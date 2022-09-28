@@ -24,6 +24,6 @@ class CartaoTelefone extends StatelessWidget {
   }
 
   chamarSms() {
-    launchUrl(Uri(scheme: 'tel', path: '(44) 9 9999-9999'));
+    launchUrl(Uri(scheme: 'sms', path: '(44) 9 9999-9999'));
   }
 }
