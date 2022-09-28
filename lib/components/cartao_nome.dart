@@ -8,7 +8,7 @@ class CartaoNome extends StatelessWidget {
     return const Center(
       child: Text(
         'Joao Pedro Dev.',
-        style: TextStyle(fontSize: 30),
+        style: TextStyle(fontSize: 30, color: Colors.black87),
       ),
     );
   }

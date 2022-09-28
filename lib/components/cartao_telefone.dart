@@ -9,7 +9,7 @@ class CartaoTelefone extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        title: const Text('Contato:'),
+        title: const Text('Contato: '),
         subtitle: const Text('(44) 9 8200-8800'),
         trailing: PainelTelefone(
           funcaoTelefone: chamarTelefone,
