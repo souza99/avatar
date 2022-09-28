@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_avatar/components/painel_telefone.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CartaoTelefone extends StatelessWidget {
   const CartaoTelefone({Key? key}) : super(key: key);
@@ -18,7 +19,11 @@ class CartaoTelefone extends StatelessWidget {
     );
   }
 
-  chamarTelefone() {}
+  chamarTelefone() {
+    launchUrl(Uri(scheme: 'tel', path: '(44) 9 9999-9999'));
+  }
 
-  chamarSms() {}
+  chamarSms() {
+    launchUrl(Uri(scheme: 'tel', path: '(44) 9 9999-9999'));
+  }
 }
