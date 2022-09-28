@@ -10,7 +10,10 @@ class CartaoMeuTicket extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        title: const Text('MEUS TICKETS'),
+        title: const Text(
+          'MEUS TICKETS',
+          style: TextStyle(color: Colors.red),
+        ),
         // trailing: PainelMeuTicket(
         //   funcaoTicket: funcaoTicket,
         // ),
