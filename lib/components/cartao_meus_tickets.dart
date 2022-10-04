@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_avatar/components/painel_email.dart';
-import 'package:projeto_avatar/components/painel_meu_ticket.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class CartaoMeuTicket extends StatelessWidget {

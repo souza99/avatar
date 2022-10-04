@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Avatar extends StatelessWidget {
+class AvatarRetrato extends StatelessWidget {
   final String urlImagem;
-  const Avatar({Key? key, required this.urlImagem}) : super(key: key);
+  const AvatarRetrato({Key? key, required this.urlImagem}) : super(key: key);
 
   Widget criarAvatar(BuildContext context, double largura) {
     return CircleAvatar(
       backgroundImage: NetworkImage(urlImagem),
-      radius: largura / 3,
+      radius: largura / 20,
     );
   }
 
   Widget criarAvatarGenerico(BuildContext context, double largura) {
     return CircleAvatar(
       backgroundImage: const NetworkImage("backgroundImage"),
-      radius: largura / 3,
+      radius: largura / 14,
     );
   }
 

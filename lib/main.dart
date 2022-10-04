@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'adaptativo/CartaoAdaptativo.dart';
 import 'home.dart';
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
   runApp(const MyApp());
 }
 
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(),
+      home: const CartaoAdaptativo(),
     );
   }
 }
