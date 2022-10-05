@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'adaptativo/CartaoAdaptativo.dart';
 import 'home.dart';
+import 'responsivo/CartaoResponsivo.dart';
 
 void main() {
   // WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const CartaoAdaptativo(),
+      home: const CartaoResponsivo(),
     );
   }
 }

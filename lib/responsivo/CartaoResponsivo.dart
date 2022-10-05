@@ -12,11 +12,13 @@ class CartaoResponsivo extends StatefulWidget {
 class _CartaoResponsivoState extends State<CartaoResponsivo> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GridView.count(
-        crossAxisCount: 2,
-        children: const [MeuAvatar(), CartaoInfo()],
-      ),
-    );
+    return OrientationBuilder(builder: (context, orientation) {
+      return Scaffold(
+        body: GridView.count(
+          crossAxisCount: (orientation == Orientation.portrait) ? 1 : 2,
+          children: const [MeuAvatar(), CartaoInfo()],
+        ),
+      );
+    });
   }
 }
