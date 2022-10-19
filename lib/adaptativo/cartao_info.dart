@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_avatar/components/cartao_email.dart';
+import 'package:projeto_avatar/components/cartao_meus_tickets.dart';
 import 'package:projeto_avatar/components/cartao_nome.dart';
 import 'package:projeto_avatar/components/cartao_telefone.dart';
+import 'package:projeto_avatar/components/foto_de_fundo.dart';
 
 class CartaoInfo extends StatelessWidget {
   const CartaoInfo({Key? key}) : super(key: key);
@@ -10,8 +13,9 @@ class CartaoInfo extends StatelessWidget {
     return Column(
       children: const [
         CartaoNome(),
-        CartaoNome(),
-        CartaoNome(),
+        CartaoTelefone(),
+        CartaoEmail(),
+        CartaoMeuTicket(),
       ],
     );
   }

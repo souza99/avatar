@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_avatar/adaptativo/cartao_info.dart';
+import 'package:projeto_avatar/components/foto_de_fundo.dart';
 import 'package:projeto_avatar/components/meu_avatar.dart';
 
 class CartaoResponsivo extends StatefulWidget {
@@ -16,7 +17,7 @@ class _CartaoResponsivoState extends State<CartaoResponsivo> {
       return Scaffold(
         body: GridView.count(
           crossAxisCount: (orientation == Orientation.portrait) ? 1 : 2,
-          children: const [MeuAvatar(), CartaoInfo()],
+          children: const [FotoDeFundo(), MeuAvatar(), CartaoInfo()],
         ),
       );
     });

@@ -9,7 +9,7 @@ class CartaoMeuTicket extends StatelessWidget {
     return Card(
       child: ListTile(
         title: const Text(
-          'MEUS TICKETS',
+          'MEUS INGRESSOS',
           style: TextStyle(color: Colors.red),
         ),
         // trailing: PainelMeuTicket(

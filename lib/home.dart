@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:projeto_avatar/components/cartao_nome.dart';
 
 import 'components/cartao_email.dart';
@@ -13,7 +14,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(60),
-      decoration: const BoxDecoration(color: Colors.white),
+      decoration: const BoxDecoration(color: Colors.black),
       child: Column(
         children: const [
           MeuAvatar(),
